@@ -1,0 +1,39 @@
+/* class
+id
+element 
+attribute */
+
+
+.heading{
+    font-family: sans-serif;
+    color: #556471;
+    font-size: 62px;
+    text-align: center;
+}
+
+.container{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.container .tiger{
+    width: 19%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tiger-img{
+    width: 19%;
+    border: 5px solid #e75454;
+    border-radius: 20px;
+    height: 192px;
+}
+.tiger-img img{
+    width: 100%;
+    border-radius: 12px;
+    height: fit-content;
+    -webkit-user-drag: none;
+}

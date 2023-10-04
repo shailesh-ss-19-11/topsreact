@@ -3,20 +3,39 @@ id
 element 
 attribute */
 
+html {
+    font-size: 10px;
+    width: 90vw;
+}
 
-.heading{
+.heading {
     font-family: sans-serif;
     color: #556471;
     font-size: 62px;
     text-align: center;
 }
 
-.container{
+.container {
     margin-left: 7%;
     margin-right: 7%;
+    display: flex;
+    gap: 20px;
+    width: 90vw;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.container .tiger{
+.newblock {
+    width: 300px;
+    border: 1px solid coral;
+}
+
+.card {
+    width: 120%;
+}
+
+.container .tiger {
     width: 19%;
     text-align: center;
     font-size: 2rem;
@@ -25,15 +44,45 @@ attribute */
     margin-bottom: 10px;
 }
 
-.tiger-img{
+.tiger-img {
     width: 19%;
     border: 5px solid #e75454;
     border-radius: 20px;
     height: 192px;
 }
-.tiger-img img{
+
+.tiger-img img {
     width: 100%;
     border-radius: 12px;
     height: fit-content;
     -webkit-user-drag: none;
 }
+
+
+/* positions in css */
+/* static 
+relative
+absolute
+sticky
+fixed */
+
+/* .box{
+    width: 500px;
+    height: 500px;
+    background-color: coral;
+    display: inline;
+} */
+/* .box1{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 0px;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    position: sticky;
+    top: 0;
+} */
+

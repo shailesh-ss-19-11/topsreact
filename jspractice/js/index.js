@@ -40,9 +40,9 @@
 // console.log(typeof isMarried)
 
 // operators /////////////////////////////////
-// arithmatic ---> + - * / % 
+// arithmatic ---> + - * / %
 // conditional ----> < > ==  ===  <= >=   it return either true or false
-// assignment operator--->  = += -= ++ --  assign the value in varibale 
+// assignment operator--->  = += -= ++ --  assign the value in varibale
 // logical ---->&& || ! it also return true or false
 // ternary ----> ? : expression execute
 
@@ -66,25 +66,25 @@
 // console.log(ismarried===unmarried); //it checks data as well as data type
 
 // logical operator ////////////////////////////
-// && ----> if both conditions are true the it returns true otherwise false 
-// || ----> if any condition is true the it returns true otherwise false 
+// && ----> if both conditions are true the it returns true otherwise false
+// || ----> if any condition is true the it returns true otherwise false
 // ! ----> it inverse the value
 
 
 // const num1 = 10;
 // const num2 = 10;
 // console.log(num1>num2 && num1===num2);
-// // false     true 
+// // false     true
 // console.log(num1===num2 && num2===num1);
-// true         true 
+// true         true
 
-// || operator 
+// || operator
 // const num1 = 10;
 // const num2 = 10;
 // console.log(num1>num2 || num1===num2);  //true
-// //             // false     true 
+// //             // false     true
 // console.log(num1===num2 || num2===num1); //true
-// // true         true 
+// // true         true
 // console.log(num1>num2 || num2<num1); //false
 
 // ! operator ///////////
@@ -95,10 +95,10 @@
 // const num1 = 10;
 // const num2 = 10;
 
-// num1== num2 ? 
+// num1== num2 ?
 // num1> num2 ? console.log("num1 is greater") :
 // console.log("num1 is less"):
-// console.log("its true") 
+// console.log("its true")
 // console.log("its false");
 
 // conditional statements /////////////////////////
@@ -161,7 +161,6 @@
 
 // 1+2+3+4+5.. .10 ///55
 
-
 // var i=0;
 // do{
 //     console.log(i);
@@ -169,7 +168,7 @@
 // }while(i<100);
 
 // string /////////////////////////////////////////////
-// const name = "shailesh gokhale"; 
+// const name = "shailesh gokhale";
 // console.log(name);
 // console.log(name.length);
 // console.log(name[0]);
@@ -195,3 +194,112 @@
 // for(let i=0;i<fullname.length;i++){
 //     console.log(fullname[i] + " ");
 // }
+
+// ;function //////////////////////////////////////////////////////////////
+// three types of function in js
+// normal function
+// expressive function
+// arrow function
+
+// function callMyName(){
+//     console.log("shailesh");
+// }
+// callMyName()
+
+// const callMyName =function(){
+//     console.log("shailesh");
+// }
+// callMyName();
+
+// const callMyName = ()=>{
+//     console.log("shailesh");
+// }
+// callMyName();
+
+// const callMyName = ()=>console.log("shailesh")
+// callMyName()
+
+// parametrised function //////////////////////////////
+const isNegative = (num) => {
+    // return num<0;
+    if (num < 0) {
+        console.log("number is negative")
+    } else {
+        console.log("number is positive")
+    }
+}
+// isNegative(10);
+// console.log()
+// const result = isNegative(10)
+// if(result){
+//     console.log("number is positive")
+// }else{
+//     console.log("number is negative")
+// }
+
+// const isNegative = (num)=> num<0;
+// const result = isNegative(10)
+// console.log(result)
+
+
+// home work ////////////////////////////
+// 1+2+3+...10; 
+// const total = (num)=>{
+//     let count = 0;
+//     let i=0;
+//     while(i<=num){
+//         count = count+i
+//         i++;
+//     }
+//     console.log(count);
+// }
+// total(100)
+
+
+// function inside function //////////////////////////
+// function hello() {
+//     console.log("hello")
+//     function world() {
+//         console.log("world");
+//     }
+//     world()
+//     console.log("hello again")
+// }
+
+// hello();
+
+// callback function //////////////////////////////////
+
+// function xyz(name,age){
+//     // console.log(`my name is ${name} and age is ${age}`)
+//     // console.log("my name is "+name+" and age is "+age)
+// }
+// function abc(callback){
+//     callback("shailesh",23);
+// }
+// abc(xyz);
+
+// anonymous function ///////////////////////////////////
+// ((name)=>{
+//     console.log("this is anonymous function 1");
+// })
+// ();
+
+// ((name)=>{
+//     console.log("this is anonymous function 2");
+// })
+// ();
+// hello();
+
+// hoisting//////////////////////////////////////////////
+// function hello(){
+//     console.log("hello")
+// }
+
+// var hello=()=>{
+//     console.log("hello")
+// }
+
+// console.log(name)
+// var name = "shailesh"
+// const name = "shailesh" ///not give output

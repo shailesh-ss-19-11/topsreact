@@ -296,10 +296,54 @@ const isNegative = (num) => {
 //     console.log("hello")
 // }
 
-// var hello=()=>{
+// const hello=()=>{
 //     console.log("hello")
 // }
 
 // console.log(name)
 // var name = "shailesh"
 // const name = "shailesh" ///not give output
+
+// array //////////////////////////////////////////////////
+// collection of different types of data 
+
+// const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
+// add or remove element from end of array ///////////////////////////
+
+// studentsNames.push("raju");
+// console.log(studentsNames)
+// const poppedElement = studentsNames.pop();
+// console.log(poppedElement)
+
+// add or remove element from start ////////////////////////
+// studentsNames.unshift("xyz");
+// console.log(studentsNames)
+// studentsNames.shift();
+// console.log(studentsNames)
+
+// splice method to add or remove element from any index //////////////////
+// console.log(studentsNames[studentsNames.length-1])
+// console.log(studentsNames.slice(0,3))
+// console.log(studentsNames)
+// studentsNames.splice(2, 1,"xyz");
+
+// clone of array /////////////////////////////////////////
+const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
+// const newarr = studentsNames;
+
+// FIRST WAY /////////////////////////////////////////
+// const newarr = [].concat(studentsNames);
+// console.log(newarr)
+// console.log(studentsNames===newarr)
+
+// second way /////////////////////////////////////////
+// const newarr = studentsNames.slice(0)
+// console.log(newarr)
+// console.log(studentsNames===newarr)
+
+// third way //////////////////////////////////////////
+// spread operator ////////////////////////////////////
+// const testarr = [1,2,3,4,5,6,6]
+// const newarr = [...studentsNames,"xyz","abc",...testarr];
+// console.log(newarr)
+// console.log(studentsNames===newarr)

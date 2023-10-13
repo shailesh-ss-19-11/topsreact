@@ -347,3 +347,54 @@ const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
 // const newarr = [...studentsNames,"xyz","abc",...testarr];
 // console.log(newarr)
 // console.log(studentsNames===newarr)
+
+// const fruits = ["grapes","apple","watermelon","lemon","tomato","papaya","chiku"];
+// console.log(fruits[0]);
+// let vegitables=[];
+// for(let i=0;i<fruits.length;i++){
+//     console.log(fruits[i])
+//     if(fruits[i]=="tomato"){
+//         vegitables.push(fruits[i])
+//     }
+// }
+// console.log(vegitables)
+
+// for of loop ///////////////////////////////////////////////
+// let vegitables=[];
+// const fruits = ["grapes","apple","watermelon","lemon","tomato","papaya","chiku"];
+// for(let fruit of fruits){
+//     console.log(fruit);
+//     if(fruit==="tomato"){
+//         vegitables.push(fruit);
+//     }
+// }
+// console.log(vegitables)
+
+
+// for in loop /////////////////////////////////////////////////////
+// let vegitables=[];
+// const fruits = ["grapes","apple","watermelon","lemon","tomato","papaya","chiku"];
+// for(let index in fruits){
+//     console.log(fruits[index]);
+//     if(fruits[index]==="tomato"){
+//         vegitables.push(fruits[index]);
+//     }
+// }
+// console.log(vegitables)
+
+
+// object /////////////////////////////////////////////////////
+// store data in the form of key vaue pairs 
+// it store real world data 
+const student1 = {
+    name:"shailesh",
+    age:23,
+    address:"nagpur",
+    hobbies:["gaming","trkking","swimming"],
+    ismarried:false,
+    parents:{
+        mother:"xyz",
+        father:"abc"
+    }
+}
+console.log(student1)

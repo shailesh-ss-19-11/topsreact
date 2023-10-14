@@ -328,7 +328,7 @@ const isNegative = (num) => {
 // studentsNames.splice(2, 1,"xyz");
 
 // clone of array /////////////////////////////////////////
-const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
+// const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
 // const newarr = studentsNames;
 
 // FIRST WAY /////////////////////////////////////////
@@ -386,15 +386,38 @@ const studentsNames = ["shailesh","vinay","swapnil","vaibhav","tanushree"];
 // object /////////////////////////////////////////////////////
 // store data in the form of key vaue pairs 
 // it store real world data 
-const student1 = {
-    name:"shailesh",
-    age:23,
-    address:"nagpur",
-    hobbies:["gaming","trkking","swimming"],
-    ismarried:false,
-    parents:{
-        mother:"xyz",
-        father:"abc"
-    }
-}
-console.log(student1)
+// const student1 = {
+//     name:"pooja gokhale",
+//     age:23,
+//     address:"nagpur",
+//     hobbies:["gaming","trkking","swimming"],
+//     "is married":false,
+//     parents:{
+//         mother:"xyz",
+//         father:"abc"
+//     }
+// }
+
+// student1.name = "puja sonkusare"
+// console.log(student1.name)
+// console.log(student1.address)
+// student1["is married"]=true ; 
+// console.log(student1["is married"])
+
+let student = {};
+student.name = "xyz";
+student.age = 23;
+student.email = "email@email.com";
+student["is married"] = false;
+console.log(student)
+
+// const keys = Object.keys(student);
+// console.log(keys.length)
+// for(let i=0;i<keys.length;i++){
+//     console.log(`${keys[i]} : ${student[keys[i]]}`)
+// }
+
+// const keys = Object.keys(student)
+// for (const key of keys) {
+//     console.log(`${key} : ${student[key]}` );
+// }

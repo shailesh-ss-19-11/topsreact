@@ -404,12 +404,12 @@ const isNegative = (num) => {
 // student1["is married"]=true ; 
 // console.log(student1["is married"])
 
-let student = {};
-student.name = "xyz";
-student.age = 23;
-student.email = "email@email.com";
-student["is married"] = false;
-console.log(student)
+// let student = {};
+// student.name = "xyz";
+// student.age = 23;
+// student.email = "email@email.com";
+// student["is married"] = false;
+// console.log(student)
 
 // const keys = Object.keys(student);
 // console.log(keys.length)
@@ -421,3 +421,42 @@ console.log(student)
 // for (const key of keys) {
 //     console.log(`${key} : ${student[key]}` );
 // }
+
+let products = [
+    { name: "nirma", price: 230, weight: "5kg" },
+    { name: "sugar", price: 500, weight: "3kg" },
+    { name: "chilly powder", price: 800, weight: "5kg" },
+    { name: "rice", price: 900, weight: "10kg" },
+    { name: "salt", price: 400, weight: "5kg" },
+    { name: "garam masala", price: 800, weight: "7kg" }
+];
+
+// console.log(products)
+// for(let i=0;i<products.length;i++){
+//     // console.log(products[i])
+//     if(products[i].name=="salt"){
+//         console.log(`${products[i].name} ${products[i].price} ${products[i].weight}`)
+//     }else{
+//         console.log("product is not availabel")
+//     }
+// }
+
+
+// array methods /////////////////////////////////////
+// forEach method ////////////////////////////////////
+
+// foreach method with callback 
+// function product(item){
+//     console.log(item);
+//     if(item.name ==="salt"){
+//         console.log(`${item.name} ${item.price} ${item.weight}`)
+//     }
+// }
+
+// products.forEach(product)
+
+products.forEach((product) => {
+    if (product.name === "salt") {
+        console.log(`${product.name} ${product.price} ${product.weight}`)
+    }
+})

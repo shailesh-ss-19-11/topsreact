@@ -422,14 +422,29 @@ const isNegative = (num) => {
 //     console.log(`${key} : ${student[key]}` );
 // }
 
-let products = [
-    { name: "nirma", price: 230, weight: "5kg" },
-    { name: "sugar", price: 500, weight: "3kg" },
-    { name: "chilly powder", price: 800, weight: "5kg" },
-    { name: "rice", price: 900, weight: "10kg" },
-    { name: "salt", price: 400, weight: "5kg" },
-    { name: "garam masala", price: 800, weight: "7kg" }
-];
+// let products = [
+//     { name: "nirma", price: 230, weight: "5kg" },
+//     { name: "sugar", price: 500, weight: "3kg" },
+//     { name: "chilly powder", price: 800, weight: "5kg" },
+//     { name: "rice", price: 900, weight: "10kg" },
+//     { name: "salt", price: 400, weight: "5kg" },
+//     { name: "garam masala", price: 800, weight: "7kg" }
+// ];
+
+// for of loop ///////////////////////////////////
+// for (const product of products) {
+//     console.log(product)
+//     if (product.name === "salt") {
+//         console.log(`${product.name}  ${product.price} ${product.weight}`)
+//     }
+// }
+// for In loop ///////////////////////////////////
+// for (let index in products) {
+//     console.log(products[index]);
+//     if (products[index].name === "salt") {
+//         console.log(`${products[index].name}  ${products[index].price} ${products[index].weight}`)
+//     }
+// }
 
 // console.log(products)
 // for(let i=0;i<products.length;i++){
@@ -446,6 +461,7 @@ let products = [
 // forEach method ////////////////////////////////////
 
 // foreach method with callback 
+// it does not return anything 
 // function product(item){
 //     console.log(item);
 //     if(item.name ==="salt"){
@@ -455,8 +471,59 @@ let products = [
 
 // products.forEach(product)
 
-products.forEach((product) => {
-    if (product.name === "salt") {
-        console.log(`${product.name} ${product.price} ${product.weight}`)
-    }
-})
+// products.forEach((product) => {
+//     if (product.name === "salt") {
+//         console.log(`${product.name} ${product.price} ${product.weight}`)
+//     }
+// })
+
+// let products = [
+//     { id:1,name: "nirma", price: 230, weight: "5kg" },
+//     { id:2,name: "sugar", price: 500, weight: "3kg" },
+//     { id:3,name: "chilly powder", price: 800, weight: "5kg" },
+//     { id:4,name: "rice", price: 900, weight: "10kg" },
+//     { id:5,name: "salt", price: 400, weight: "5kg" },
+//     { id:6,name: "garam masala", price: 800, weight: "7kg" }
+// ];
+
+
+// // map ////////////////////////////
+// // it returns new array 
+// const newpricedProducts = products.map((product)=>{
+//     console.log(product)
+//     if(product.id===2){
+//         product.price=300;
+//     }
+//     console.log(products)
+//     return product;
+
+// })
+// console.log(newpricedProducts)
+
+// const newFiltredProducts1 = products.filter((product)=>product.price<800);
+// console.log(newFiltredProducts1)
+// const newFiltredProducts2 = products.filter((product)=>product.price>=800);
+// console.log(newFiltredProducts2)
+
+// find method ///////////////////////////////////////////
+// let findProduct = products.find((product)=>product.id==4)
+// console.log(findProduct)
+
+
+// let products = [
+//     { id: 1, name: "nirma", price: 230, weight: "5kg" },
+//     { id: 2, name: "sugar", price: 500, weight: "3kg" },
+//     { id: 3, name: "chilly powder", price: 800, weight: "5kg" },
+//     { id: 4, name: "rice", price: 900, weight: "10kg" },
+//     { id: 5, name: "salt", price: 400, weight: "5kg" },
+//     { id: 6, name: "garam masala", price: 800, weight: "7kg" }
+// ];
+
+// const totalprice = products.reduce((totalprice, currentProduct) => {
+//     return totalprice + currentProduct.price;
+// },0)
+// console.log(totalprice)
+
+
+// const usernames = ["shailesh","swapni","akash","vaibhav","tushar"]
+// console.log(usernames.sort());

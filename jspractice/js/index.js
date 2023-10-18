@@ -527,3 +527,74 @@ const isNegative = (num) => {
 
 // const usernames = ["shailesh","swapni","akash","vaibhav","tushar"]
 // console.log(usernames.sort());
+// const numbers = [23,5,89,9,0,1];
+// const sortedNumbers = numbers.sort((a,b)=>{
+//     return a-b;
+// })
+// console.log(sortedNumbers)
+
+// let products = [
+//     { id: 1, name: "nirma", price: 230, weight: "5kg" },
+//     { id: 2, name: "sugar", price: 500, weight: "3kg" },
+//     { id: 3, name: "chilly powder", price: 800, weight: "5kg" },
+//     { id: 4, name: "rice", price: 900, weight: "10kg" },
+//     { id: 5, name: "salt", price: 400, weight: "5kg" },
+//     { id: 6, name: "garam masala", price: 800, weight: "7kg" }
+// ];
+
+// const sortedprices = products.sort((a,b)=>{
+//     return a.price-b.price
+// })
+// console.log(sortedprices)
+
+// object inside function ///////////////////////////////////
+// const usermethods = {
+//     myinfo: function () {
+//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.adddress}`
+//     },
+//     callmyname:function(){
+//         return `${this.name}`
+//     },
+// }
+// const userdetails = {
+//     name: "shailesh",
+//     age: 23,
+//     adddress: "nagpur",
+//     hobbies: ["trekking", "swimming"],
+//     callmyname:usermethods.callmyname,
+//     myinfo:usermethods.myinfo
+// }
+
+// console.log(userdetails.myinfo())
+// console.log(userdetails.callmyname())
+
+// const obj1 = {
+//     key1:"value1",
+//     key2:"value2"
+// }
+// let obj2 = {
+//     key3:"value3",
+//     key4:"value4",
+// }
+// obj2 = Object.create(obj1)
+// console.log(obj2.key1)
+
+
+// const usermethods = {
+//     myinfo: function () {
+//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.adddress}`
+//     },
+//     callmyname: function () {
+//         return `${this.name}`
+//     },
+// }
+// const userdetails = {
+//     user = Object.create(usermethods)
+//     user.name = "shailesh",
+//     user.age = 23,
+//     user.adddress = "nagpur",
+//     user.hobbies = ["trekking", "swimming"],
+//     user.callmyname = usermethods.callmyname,
+//     user.myinfo = usermethods.myinfo
+// }
+

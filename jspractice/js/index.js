@@ -568,33 +568,112 @@ const isNegative = (num) => {
 // console.log(userdetails.myinfo())
 // console.log(userdetails.callmyname())
 
-// const obj1 = {
-//     key1:"value1",
-//     key2:"value2"
-// }
-// let obj2 = {
-//     key3:"value3",
-//     key4:"value4",
-// }
-// obj2 = Object.create(obj1)
-// console.log(obj2.key1)
 
-
+// create user using function //////////////////////
 // const usermethods = {
 //     myinfo: function () {
-//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.adddress}`
+//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.address}`
 //     },
-//     callmyname: function () {
+//     callmyname:function(){
 //         return `${this.name}`
 //     },
 // }
-// const userdetails = {
-//     user = Object.create(usermethods)
-//     user.name = "shailesh",
-//     user.age = 23,
-//     user.adddress = "nagpur",
-//     user.hobbies = ["trekking", "swimming"],
-//     user.callmyname = usermethods.callmyname,
-//     user.myinfo = usermethods.myinfo
+
+// function createuser(name, age, address) {
+//     let user = {};
+//     user.name = name;
+//     user.age = age;
+//     user.address = address;
+//     user.myinfo = usermethods.myinfo;
+//     user.callmyname = usermethods.callmyname;
+//     return user;
 // }
 
+// const user1 = createuser("shailesh", 23, "nagpur");
+// const user2 = createuser("vinay", 26, "wardha");
+// console.log(user1)
+// console.log(user2)
+// console.log(user1.myinfo())
+
+
+
+// __proto__////////////////[[prototype]]//////////////
+// let obj1 = {};
+// let obj2 = {
+//     key1:"value1",
+//     key2:"value2"
+// }
+
+// obj1 = Object.create(obj2);
+// console.log(obj1);
+
+// const usermethods = {
+//     myinfo: function () {
+//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.address}`
+//     },
+//     callmyname:function(){
+//         return `${this.name}`
+//     },
+// }
+
+// function createuser(name, age, address) {
+//     let user = Object.create(usermethods);
+//     user.name = name;
+//     user.age = age;
+//     user.address = address;
+//     return user;
+// }
+
+// const user1 = createuser("shailesh", 23, "nagpur");
+// console.log(user1)
+// console.log(user1.myinfo())
+
+// prototype /////////////////////////////////////////////////
+// function has its own free space 
+// free space in the form of object /////////// named as prototype
+// we can add anything in this prototype /////////////
+
+// function createuser(name, age, address) {
+//     let user = Object.create(createuser.prototype);
+//     user.name = name;
+//     user.age = age;
+//     user.address = address;
+//     return user;
+// }
+
+// const user1 = createuser("shailesh", 23, "nagpur");
+// console.log(user1)
+// createuser.prototype.hobbies = ["swmming","trkking"];
+// createuser.prototype.myinfo= function () {
+//     return `my name is ${this.name} and my age is ${this.age}, I live in ${this.address}`
+// }
+// createuser.prototype.callmyname=function(){
+//     return `${this.name}`
+// }
+
+// console.log(user1.callmyname())
+// console.log(user1.hobbies)
+
+
+// new keyword /////////////////////////////////////////////////////
+// it gives this = {} ////////////////////////////////
+// it return this itself ////////////
+// function createuser(name, age, address) {
+//     this.name = name;
+//     this.age = age;
+//     this.address = address;
+//     return this;
+// }
+
+// const user1 = new createuser("shailesh", 23, "nagpur");
+// console.log(user1)
+// createuser.prototype.hobbies = ["swmming","trkking"];
+// createuser.prototype.myinfo= function () {
+//     return `my name is ${this.name} and my age is ${this.age}, I live in ${this.address}`
+// }
+// createuser.prototype.callmyname=function(){
+//     return `${this.name}`
+// }
+
+// console.log(user1.callmyname())
+// console.log(user1.hobbies)

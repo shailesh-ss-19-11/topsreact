@@ -677,3 +677,34 @@ const isNegative = (num) => {
 
 // console.log(user1.callmyname())
 // console.log(user1.hobbies)
+
+// class createuser {
+//     constructor(name, age, address) {
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+//     myinfo = function () {
+//         return `my name is ${this.name} and my age is ${this.age}, I live in ${this.address}`
+//     }
+//     callmyname = function () {
+//         return `${this.name}`
+//     }
+// }
+
+// const user1 = new createuser("shailesh", 23, "nagpur");
+// console.log(user1)
+// const myinfo = user1.myinfo();
+// console.log(myinfo)
+
+// in javascript everything is object //////////////////
+// real array 
+// const arr=[1,2,3,4,5,6,7]
+// const arr = new Array(1,2,3,4,5,6)
+// arr.__proto__.is1exist = function(){
+//     console.log(arr.includes(1))
+// }
+// console.log(arr)
+
+// arr.is1exist();
+// core js /////////////////////////////////////////

@@ -90,7 +90,6 @@
 // ! operator ///////////
 
 // console.log(!true);
-
 // ternary operator //////////
 // const num1 = 10;
 // const num2 = 10;
@@ -220,14 +219,14 @@
 // callMyName()
 
 // parametrised function //////////////////////////////
-const isNegative = (num) => {
-    // return num<0;
-    if (num < 0) {
-        console.log("number is negative")
-    } else {
-        console.log("number is positive")
-    }
-}
+// const isNegative = (num) => {
+//     // return num<0;
+//     if (num < 0) {
+//         console.log("number is negative")
+//     } else {
+//         console.log("number is positive")
+//     }
+// }
 // isNegative(10);
 // console.log()
 // const result = isNegative(10)

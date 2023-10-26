@@ -47,19 +47,30 @@
 //     }
 // }
 
-
 // DOM traversing ////////////////////////////////////////////
 // document object model///////////////////////////////////// 
 
-const rootElement  = document.getRootNode();
-const htmlelement = rootElement.childNodes[0];
-const bodyElement = htmlelement.childNodes[2];
-console.log(bodyElement.childNodes)
-// let 
-// for (let i = 0; i < bodyElement.childNodes.length; i++) {
-//         console.log(bodyElement.childNodes[i])
-//         if(bodyElement.childNodes[i].textContent=="\n    "){
-//             delete bodyElement.childNodes[i]
-//         }
+// const rootElement  = document.getRootNode();
+// const htmlelement = rootElement.childNodes[0];
+// const bodyElement = htmlelement.childNodes[2];
+// console.log(bodyElement.childNodes)
+// const bodyChilds = bodyElement.childNodes;
+// console.log(bodyChilds[1].nextSibling.nextSibling)
+
+
+// first way of create element 
+// create element in html using js ///////////////////////////////////
+// const createElementDemo = document.querySelector("#createElementDemo");
+// console.dir(createElementDemo);
+// createElementDemo.innerHTML = "<h2>this is first line</h2>"
+// createElementDemo.innerHTML += "<h2>this is second line</h2>"
+
+// second way of create element 
+// const itemList = document.querySelector("#item-list")
+// console.log(itemList);
+// for (let i = 0; i < 10; i++) {
+//     const item = document.createElement("li");
+//     item.textContent = `item ${i}`
+//     console.log(item);
+//     itemList.append(item);
 // }
-console.log(bodyElement.childNodes)

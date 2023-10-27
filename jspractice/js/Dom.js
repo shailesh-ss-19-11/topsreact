@@ -74,3 +74,34 @@
 //     console.log(item);
 //     itemList.append(item);
 // }
+
+// createelement third way //////////////////////////////////
+// afterbegin 
+// beforebegin
+// afterend
+// beforeend
+
+// for (let i = 0; i < 10; i++) {
+//     const itemlist = document.querySelector("#item-list");
+//     // todoList.insertAdjacentHTML("beforeend","<li>todo 1</li>")
+//     const item = document.createElement("li");
+//     item.textContent = "task " + i
+//     itemlist.insertAdjacentElement("beforeend", item);
+// }
+
+// const btn = document.querySelector("#btn");
+// const btnClasses = btn.classList;
+// btnClasses.remove("btn-primary")
+// btnClasses.add("btn-danger")
+
+function hide(){
+    const details = document.querySelector("#details");
+    details.classList.remove("showElement");
+    details.classList.add("hideElement");
+}
+
+function show(){
+    const details = document.querySelector("#details");
+    details.classList.remove("hideElement");
+    details.classList.add("showElement");
+}

@@ -11,7 +11,8 @@
 
 <body>
     <h1 id="heading1" class="heading">This is first demo of dom</h1>
-    <p id="details" class="showElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit, cumque nam quae numquam omnis corrupti
+    <p id="details" class="showElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit, cumque nam
+        quae numquam omnis corrupti
         praesentium iure asperiores dolorem nesciunt, saepe repellendus facere in tenetur dolorum! Illo repellat
         repellendus incidunt placeat doloribus! Consectetur maxime vitae esse sequi placeat laboriosam eos cupiditate?
         Quia provident at eius similique aliquam velit iusto explicabo expedita dignissimos porro quasi sed ab odio odit
@@ -28,8 +29,15 @@
     </div>
     <ul id="item-list">
     </ul>
-    <button class="btn btn-primary" id="btn" onclick="hide()">Hide </button>
-    <button class="btn btn-primary" id="btn" onclick="show()">show </button>
+    <button class="btn btn-primary hide-btn" id="btnhide" onclick="hide()">Hide </button>
+    <button class="btn btn-primary hideElement" id="btnshow" onclick="show()">show </button>
+
+    <br><br>
+    <input type="text" id="input1" placeholder="enter name">
+    <input type="number" id="input2" placeholder="enter age">
+    <input type="text" id="input3" placeholder="enter address">
+    <button onclick="adduser()">add user</button>
+    <button onclick="deletuser()">Delete user</button>
 </body>
 
 </html>

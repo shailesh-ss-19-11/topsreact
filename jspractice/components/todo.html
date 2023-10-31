@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <script src="./../js/todo.js" defer></script>
+    <link rel="stylesheet" href="./../asset/css/style.css">
 </head>
+
 <body>
-    <center>Todo List</center>
-    <center>
-        <input type="text" id="todo-input" placeholder="add todo">
-        <button id="add-todo" onclick="addtodo()">Add</button>
-        
+    <div>
+        <h3>Todo List</h3>
+        <form action="" onsubmit="addtodo()" oninput="">
+            <input type="text" id="todo-input" class="input-todo" placeholder="add todo">
+            <button id="add-todo" class="add-btn" type="submit">Add</button>
+        </form>
+
         <ul id="item-list">
             <li>item 1</li>
         </ul>
-    </center>
+    </div>
 </body>
+
 </html>

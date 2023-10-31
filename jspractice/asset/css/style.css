@@ -1,24 +1,41 @@
-.btn{
+.btn {
     padding: 10px;
     border: 1px solid red;
     border-radius: 10px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: dodgerblue;
 }
-.btn-sm{
+
+.btn-sm {
     padding: 5px;
 }
 
-.btn-danger{
+.btn-danger {
     background-color: red;
 }
 
-.hideElement{
+.hideElement {
     display: none;
 }
 
-.showElement{
+.showElement {
     display: block;
 }
+
+.input-todo {
+    width: 70%;
+    padding: 7px;
+    border: 2px solid #bcaaaa85;
+    border-radius: 12px;
+}
+
+.add-btn {
+    padding: 7px;
+    width: 7rem;
+    background: black;
+    color: white;
+    border-radius: 13px;
+}
+

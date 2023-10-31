@@ -16,6 +16,7 @@ console.log(addTodo)
 // })
 
 // function addtodo(){
+//     console.log("added")
 //     const todoInput = document.querySelector("#todo-input");
 //     let value = todoInput.value;
 //     if (value != "") {
